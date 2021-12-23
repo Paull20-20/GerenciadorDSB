@@ -29,8 +29,8 @@ html, body{
 
 /* barra de filtros */
 .barra{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .add{
     float: right;
@@ -38,9 +38,15 @@ html, body{
 .cards h3{
     text-align: center;
 }
-
-
-
+.cadastro{
+    border-bottom: 1px solid rgba(175, 175, 175, 0.466);
+}
+.botao{
+    padding-top: 28px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
 
 
 
