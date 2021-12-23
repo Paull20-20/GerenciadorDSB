@@ -68,20 +68,90 @@
             <div id="menssagem">
                 
             </div>
+
+            <div class="row mt-4 cadastro mb-4">
+                <div class="col-sm-12 p-3">
+                    <p class="text-uppercase font-weight-light text-monospace">cadastre seu card</p>
+                    <form action="" method="post">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="Data">Data</label>
+                                <input type="text" class="form-control" id="data" value="">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="Nomecard">Nome do Card</label>
+                                <input type="text" class="form-control" id="nomecard" placeholder="Nome" name="nome">
+                            </div>
+                          
+                        </div>
+                        
+                         <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label for="Trabalho">Tipo de Trabalho</label>
+                                  <select id="trabalho" class="form-control">
+                                    <option value="" selected>Escolher...</option>
+                                    <option value="Layout">Layout</option>
+                                    <option value="Mod Layout">Mod Layout</option>
+                                    <option value="Retificação Layout">Retificação Layout</option>
+                                    <option value="Folha">Folha</option>
+                                    <option value="Mod Folha">Mod Folha</option>
+                                    <option value="Retificação Folha">Retificação Folha</option>
+                                  </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <label>Quantidade</label>
+                                            <input type="text" class="form-control" placeholder="Quantidade" id="quantidade">
+                                        </div>
+                                        <div class="col-md-2 botao">
+                                            <button type="submit" class="btn btn-primary rounded-circle" onclick="cadastrarDados()">
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                        </div>
+                              
+                    </form>
+                </div>
+            </div>
             
             <div class="row barra">
                 <div class="col-sm-5">
                     <input class="form-control" id="myInput" type="text" placeholder="Pesquisar...">
                 </div>
-                <div class="row col-sm-4">
+                <div class="row col-sm-1">
                     
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-6 ">
                     <div class="add">
-                        <!-- Botão para acionar modal -->
-                        <button type="button" class="btn btn-primary rounded-circle" data-toggle="modal" data-target="#modalCadastro">
-                            <i class="fas fa-plus"></i>
-                        </button>
+                        <div class="">
+                            <!-- Section: Social media -->
+                            <section class="mb-4">
+                              
+                              <!-- Google -->
+                              <a class="btn btn-outline-dark btn-floating m-1" href="dados.html" role="button"
+                                ><i class="fas fa-chart-line"></i></a>
+                        
+                              <!-- Instagram -->
+                              <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+                                ><i class="fab fa-instagram"></i
+                              ></a>
+                        
+                              <!-- Linkedin -->
+                              <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+                                ><i class="fab fa-linkedin-in"></i
+                              ></a>
+                        
+                              <!-- Github -->
+                              <a target="_blank"  class="btn btn-outline-dark btn-floating m-1" href="https://github.com/lucasgf007/GerenciadorDSB" role="button"
+                                ><i class="fas fa-code"></i></a>
+                            </section>
+                            <!-- Section: Social media -->
+                          </div>
                     </div>
 
                 </div>
@@ -333,63 +403,6 @@
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
 
-        <!-- Modal -->
-        <div class="modal fade" id="modalCadastro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Cadastre seu Card</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                </div>
-                <div class="modal-body">
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="Data">Data</label>
-                                <input type="text" class="form-control" id="data" value="">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="Nomecard">Nome do Card</label>
-                                <input type="text" class="form-control" id="nomecard" placeholder="Nome" name="nome">
-                            </div>
-                          
-                        </div>
-                        <form action="" method="post">
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                  <label for="Trabalho">Tipo de Trabalho</label>
-                                  <select id="trabalho" class="form-control">
-                                    <option value="" selected>Escolher...</option>
-                                    <option value="Layout">Layout</option>
-                                    <option value="Mod Layout">Mod Layout</option>
-                                    <option value="Retificação Layout">Retificação Layout</option>
-                                    <option value="Folha">Folha</option>
-                                    <option value="Mod Folha">Mod Folha</option>
-                                    <option value="Retificação Folha">Retificação Folha</option>
-                                  </select>
-                                </div>
-                                <div class="form-group col-md-6">
-                                  <label>Quantidade</label>
-                                  <input type="text" class="form-control" placeholder="Quantidade" id="quantidade">
-                                </div>
-                              </div>
-                              <div class="row">
-                                  <div class="col-md-9">
-                                      <h5 class="modal_msg" id="modal_msg">       </h5>
-                                  </div>
-                                  <div class="col-md-3 add">
-                                      <button type="submit" class="btn btn-primary" onclick="cadastrarDados()">Cadastrar</button>
-                                  </div>
-                              </div>
-                        </form>
-                        
-                        
-                </div>
-                
-            </div>
-            </div>
-        </div>
 
 
         <script src="../js/geral.js"></script>
